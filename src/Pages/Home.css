@@ -1,0 +1,47 @@
+.custom-bullet {
+    list-style-type: none;
+  }
+  
+  .custom-bullet li::before {
+    content: "\2022";  /* Unicode character for a bullet point */
+    color: #ffffff;  /* Gold color for the bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .growing-outline-text {
+    text-shadow: 
+      -1px -1px 0 #6e2121,  
+       1px -1px 0 #6e2121,
+      -1px  1px 0 #6e2121,
+       1px  1px 0 #6e2121;
+    animation: outlineGrow 2s infinite alternate;
+  }
+
+  .growing-outline-text-2 {
+    text-shadow: 
+      -1px -1px 0 #a56f22,  
+       1px -1px 0 #dfaa54,
+      -1px  1px 0 #e9d158,
+       1px  1px 0 #efd897;
+    
+  }
+  
+  @keyframes outlineGrow {
+    from {
+      text-shadow: 
+        -1px -1px 0 #6e2121,  
+         1px -1px 0 #6e2121,
+        -1px  1px 0 #6e2121,
+         1px  1px 0 #6e2121;
+    }
+    to {
+      text-shadow: 
+        -3px -3px 0 #6e2121,  
+         3px -3px 0 #6e2121,
+        -3px  3px 0 #6e2121,
+         3px  3px 0 #6e2121;
+    }
+  }
